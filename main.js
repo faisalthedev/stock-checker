@@ -11,12 +11,12 @@ setTimeout(() => {
 
 function stockChecker(data) {
 	if (data.stock === 0) {
-		stockMessage = `Guru stock out. Rechecking now...`;
+		stockMessage = `<h3 class='red'>Guru stock out. Rechecking now...</h3>`;
 		stockUpdate.innerHTML = stockMessage;
 
 		location.reload();
 	} else {
-		stockMessage = `<h3>Guru ${data.stock} PCs stock again.</h3>`;
+		stockMessage = `<h3 class='green'>Guru ${data.stock} PCs stock again.</h3>`;
 		stockUpdate.innerHTML = stockMessage;
 
 		alert(`Hurry up, Guru ${data.stock} PCs stock again.`);

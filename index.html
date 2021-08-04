@@ -4,14 +4,34 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 		<title>React JS</title>
 		<style>
 			.container {
+				font-family: "Poppins", sans-serif;
 				max-width: 1170px;
 				margin: 0 auto;
 				padding: 50px 0;
 				font-size: 16px;
 				text-align: center;
+			}
+			.product-links {
+				padding: 20px 0;
+				margin-top: 50px;
+				border-radius: 10px;
+				background: #e0e0e0;
+				box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+			}
+			.product-links a {
+				color: #000;
+			}
+			h3.red {
+				color: #bd1e2e;
+			}
+			h3.green {
+				color: #009244;
 			}
 		</style>
 	</head>
@@ -20,14 +40,11 @@
 			<h1>Product Stock Checking...</h1>
 			<div class="stock-update"></div>
 			<div class="product-links">
-				<ol>
-					<li>
-						<a href="https://bangladeshdeal.com/product/samsung-guru-music-2-20pcs-combo" target="_blank">Guru Music 2 - 20 PCs combo</a>
-					</li>
-					<li>
-						<a href="https://bangladeshdeal.com/product/mi-wifi-router-4c-global-version-white-30-pcs-combo" target="_blank">Mi 4c Router - 30 PCs combo</a>
-					</li>
-				</ol>
+				<h3>Product Links (click to open)</h3>
+				<h4>1. <a href="https://bangladeshdeal.com/product/samsung-guru-music-2-20pcs-combo" target="_blank">Guru Music 2 - 20 PCs combo</a></h4>
+				<h4>
+					2. <a href="https://bangladeshdeal.com/product/mi-wifi-router-4c-global-version-white-30-pcs-combo" target="_blank">Mi 4c Router - 30 PCs combo</a>
+				</h4>
 			</div>
 		</div>
 		<script src="main.js"></script>
